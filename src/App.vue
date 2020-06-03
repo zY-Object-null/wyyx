@@ -1,20 +1,24 @@
 <template>
   <div>
     <router-view/>
-    <HelloWorld/>
+    <Foot/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Foot from './pages/foot'
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components:{
+    Foot,
+  
+  },
+  mounted(){ 
+
+    }
 }
 </script>
 
 <style>
-
 </style>

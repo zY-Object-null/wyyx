@@ -3,14 +3,19 @@ import Category from '../pages/Category/Category.vue'
 import Deserve from '../pages/Deserve/Deserve.vue'
 import Shopcart from '../pages/Shopcart/Shopcart.vue'
 import Person from '../pages/Person/Person.vue'
-
+import NavItem from '../pages/Home/Nav/NavItem/NavItem.vue'
 export default[
   {
-    path:'/',
-    component:Home
+    path:'/home',
+    component:Home,
+     
   },
   {
-    path:'/category',
+    path:'/other/:key',
+    component:NavItem
+  },
+  {
+    path:'/category/:key',
     component:Category
   },
   {
@@ -27,6 +32,6 @@ export default[
   },
   {
     path:'/',
-    redirect:'/'
+    redirect:'/home'
   }
 ]
